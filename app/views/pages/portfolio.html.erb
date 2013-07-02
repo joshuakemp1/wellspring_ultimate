@@ -1,0 +1,19 @@
+<div class="container ">
+	<h3 class="recent mt20">Our Portfolio</h3>
+	<% @portfolio.each do |l| %>
+		<div class="four columns">
+			<div class="our-work">
+				<%= link_to (l.url_large), :class => 'fancybox', :rel => 'group' do %>
+  <%= image_tag(l.url_large, size: '220x220') %>
+<% end %>
+						<h3><%= truncate(l.title, :length => 20) %></h3>
+					 </div>
+			</div>
+	<% end %>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>

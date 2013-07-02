@@ -1,0 +1,168 @@
+<div class="container main">
+		<div id="slogan" class="clearfix">
+			<div class="sixteen columns">
+				<div class="slogan">
+					<p>Hello, we are Wellspring <span class="color">Lawn</span> and <span class="color">Landscape</span></p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="page-content" class="full-width container">
+		
+			<div class="container">
+				<div class="sixteen columns">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="/assets/banner1.jpg" />
+								<div class="slide-caption">
+									<h3>Example Title 1</h3>
+									<p>In school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten burned over Cheryl Tiegs, blown up for Raquel Welch. But when I end up in the hay it's only hay, hey hey.</p>
+								</div>
+							</li>
+							<li>
+								<img src="/assets/banner2.jpg" />
+								<div class="slide-caption">
+									<h3>Example Title 2</h3>
+									<p>In school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten burned over Cheryl Tiegs, blown up for Raquel Welch. But when I end up in the hay it's only hay, hey hey.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="sixteen columns">
+					<p class="recentWork">Welcome to Wellspring Lawn and Landscape. We are a Locally owned and operated company based in the Fredericksburg Area. We service The city of Fredericksburg, Counties of Spotsylvania, Stafford and King George, specializing in turf care maintenance and Landscape Design and Install.</p>
+					<p class="recentWork">Please take some time to view some of our more recent projects and don’t hesitate to call or email with all of your Lawn and Landscaping Needs.</p>
+					<button class="button">View Portfolio</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<h3 class="recent">Recent Work</h3>
+				<% @latest.each do |l| %>
+				<div class="four columns">
+					<div class="our-work">
+						<%= link_to (l.url_large), :class => 'fancybox', :rel => 'group' do %>
+             <%= image_tag(l.url_large, size: '220x220') %>
+            <% end %>
+						<h3 class="recent"><%= truncate(l.title, :length => 20) %></h3>
+					</div>
+				</div>
+				<% end %>
+			</div>
+				
+				
+			
+			
+			<div class="container">
+				<div class="sixteen columns mb20">
+					<h2 class="recent">Our Services</h2>
+					<p class="our-services">Wellspring Lawn and Landscape specializes in turf care and weekly maintenance of your home and garden And Landscape Design and Installs. We're here to transform your lawn into the golf course quality turf you deserve, and your Home into a personal Oasis.</p>
+
+         <p class="our-services">Offering competitive pricing on Mowing and applications of weed killers and fertilizers for your turf as well as Free Estimates for any Landscaping Projects you may desire. Our staff is smart, capable, and ready to serve.</p>
+				</div>
+				
+				<div class="four columns">
+					<div class="home-blog">
+						<img id="hedges" class="services"/>
+							
+						<div class="home-blog-post">
+							<h3 class="allServices">Hedges and Shrubs</h3>
+							<p class="services-text">We trim hedges and shrubs of all sizes.We have the tools to ensure</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<div class="home-blog">
+						<img id="landscaping" class="services"/>
+				
+						<div class="home-blog-post">
+							<h3 class="allServices">New Landscaping</h3>
+							<p class="services-text">We can design and install your new landscapes, adding the personal touches that you require.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<div class="home-blog">
+						<img id="walls" class="services" />
+							
+						<div class="home-blog-post">
+							<h3 class="allServices">Retaining Walls</h3>
+							<p class="services-text">I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<div class="home-blog">
+						<img id="irrigation" class="services"/>
+							
+						<div class="home-blog-post">
+							<h3 class="allServices">Irrigation Maintenance</h3>
+							<p class="services-text">I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<div class="home-blog">
+						<img id="mulching" class="services" />
+							
+						<div class="home-blog-post">
+							<h3 class="allServices">Mulching</h3>
+							<p class="services-text">I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<div class="home-blog">
+						<img id="tree" class="services" />
+				
+						<div class="home-blog-post">
+							<h3 class="allServices">Tree pruning or removal</h3>
+							<p class="services-text">I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<div class="home-blog">
+						<img id="storm" class="services" />
+							
+						<div class="home-blog-post">
+							<h3 class="allServices">Storm clean-up</h3>
+							<p class="services-text">I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<div class="home-blog">
+						<img id="aerating" class="services" />
+							
+						<div class="home-blog-post">
+							<h3 class="allServices">Aerating and overseeding</h3>
+							<p class="services-text">I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			
+		</div>
+			
+	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+

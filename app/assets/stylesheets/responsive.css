@@ -1,0 +1,111 @@
+/* #Media Queries
+================================================== */
+
+@media all and (max-width: 1800px) {
+ select.nav-select {display:none;}
+
+}
+
+	/* Smaller than standard 1029 (devices and browsers)  */
+	@media only screen and (max-width: 1049px) {
+		#wrap { width: auto; margin: 0; background: #fff; padding: 0; box-shadow: none; }
+		#wrap > header { margin-top: 0; }
+		#wrap > footer { margin-bottom: 0; }
+	}
+	
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+		.home-blog img {width:50%; margin:0 auto;}
+
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.navigation ul li a { padding: 30px 15px 29px; }
+		.twelve .blog-post .post-right { width: 456px; }
+		.twelve .blog-post .post-right.variant { width: 296px; }
+		.sixteen .blog-post .post-right { width: 648px; }
+		#contact-form .contact-form textarea { width: 546px; }
+		input[type="text"], input[type="password"], input[type="email"], textarea, select { width: 162px; }
+		
+		h3.front-page { margin-bottom: 0; }
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.navigation ul { margin: 0; }
+		.navigation ul li a { width:134px; margin:2px 1px 0; padding: 20px 0; }
+		.navigation ul ul { top: 100%; margin: 0 0 0 1px; }
+		.navigation ul ul li { float: none; clear: both; }
+		.navigation ul ul li a { margin: 0; }
+		.navigation ul ul ul { box-shadow: none; left: -1px; top: 100%; display: block !important; visibility: visible !important; position: relative; }
+		.navigation ul ul ul a { text-indent: 15px; }
+		.social { float: left; }
+		.social a { margin: 15px 10px 0 0; }
+		.twelve .blog-post .post-right { width: 320px; }
+		.twelve .blog-post .post-right.variant { width: 420px; }
+		.sixteen .blog-post .post-right { width: 320px; }
+		#contact-form .contact-form textarea { width: 410px; }
+		input[type="text"], input[type="password"], input[type="email"], textarea, select { width: 410px; }
+		ul.children { margin-left: 0; }
+		h3.front-page { margin-bottom: 0; }
+		.recent-posts p { margin: -3px 0 20px 0; }
+		.slide-caption { display: none; }
+		.flex-direction-nav a { right: 10px; bottom: 10px; }
+		.flex-direction-nav .flex-next { right: 46px; }
+		.flexslider { margin: 0 0 30px; }
+		.home-blog { margin: 0px; }
+		.our-work { margin-bottom: 30px; }
+		.flex-control-nav { display: none; }
+		.b-white { margin-right: 20px; }
+		#filters ul li a { margin-bottom: 10px; }
+		.our-work.our-work-margin { margin-bottom: 30px; }
+		.flexslider.work-slider { margin-bottom: 50px; }
+		.client-list li img { width: 139px; }
+		.client-list li { margin: 0 -1px -1px 0; }
+		.our-team > img { width: 224px; }
+		.page-content .img-float-right { margin-left: 0; }
+		.page-content .img-float-left { margin-right: 0; }
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		nav#menu, .flexslider{display:none;}
+		.home-blog img {width:75%;}
+		.services-text, .our-services, .recent, .recentWork{padding:5px;}
+		.recentWork{font-size:1.4em;padding-top:10px;
+		 }
+
+		select.nav-select {display:block;width:100%;}
+		h3.front-page { margin-bottom: 0; }
+		.recent-posts p { margin: -3px 0 20px 0; }
+		.home-blog { margin: 0px; }
+		.our-work { margin-bottom: 30px; }
+		.flex-control-nav { display: none; }
+		.price-box.items { display: none; }
+		.alert-success, .alert-info, .alert-warning, .alert-error, .alert-notice { font-size: 10px; }
+		ul.tabs-nav li a { width: 95px; }
+		#filters ul li a { margin-bottom: 10px; }
+		.flexslider.work-slider { margin-bottom: 50px; }
+
+		.slogan {display:none;}
+
+		input.zip[type="text"] { width: 96%;}
+		textarea.message{width:94%;}
+
+		.copyright, .flickr, footer h3, p.footer-text, h3.gmap-header, form{padding:5px;}
+
+		.flickr{margin:0px;}
+		.flickr a img {margin:3px 7px 8px 5px;}
+
+		footer{padding:10px 0 15px;}
+		
+	}
+

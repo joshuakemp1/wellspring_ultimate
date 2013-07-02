@@ -1,0 +1,42 @@
+	<header>
+		<div class="container">
+			<div class="one-third column">
+				<div class="logo">
+					<a href="index.html">
+						<img alt="logo" src="/assets/wellspringlogo.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="two-thirds column">
+				<nav id="menu" class="navigation">
+					<ul id="nav" class="clearfix">
+						<li>
+							<%= link_to  root_path  do %>
+                Home
+                <span>Where We Live</span>
+              <% end %>
+						</li>
+						<li>
+							<%= link_to portfolio_path do %>
+							 Portfolio
+							 <span>See Our Work</span>
+							 <% end %>
+						</li>
+						<li><a href="/contacts/new">Contact<span>Get In Touch</span></a></li>
+					</ul>
+				</nav>
+
+				<!-- resp nav -->
+         <select class="nav-select">
+          <option value="selected">Take A Look Around...</option>
+          <option value="<%= root_path %>">Home</option>
+          <option value="<%= portfolio_path %>">Portfolio</option>
+          <option value="<%= new_contact_path %>">Contact</option>
+         </select>
+        <!-- end resp nav -->
+			</div>
+			<div class="sixteen columns">
+				<hr class="line" />
+			</div>
+		</div>
+	</header>

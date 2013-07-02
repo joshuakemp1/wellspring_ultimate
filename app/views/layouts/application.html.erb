@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Wellspring Lawn & Landscape</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+   <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+ <body onload="initialize()">
+   <div id="wrap">
+    <% flash.each do |name, msg| %>
+    <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+      <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+    </div>
+  <% end %>
+
+    <%= render 'shared/header' %>
+     
+    <%= yield %> 
+    <%= render 'shared/footer' %>
+     
+   </div><!--End wrapper-->
+ </body>
+</html>
+  
+
+
+
+
+
+  
+ 
