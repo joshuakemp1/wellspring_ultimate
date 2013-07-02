@@ -47,4 +47,4 @@ Practice1::Application.configure do
 }
 end
 
-# Dont forget to add username and password to test mailer in development, comment out before pushing bak to github
+# Dont forget to add username and password to test mailer in development, comment out before pushing back to github
