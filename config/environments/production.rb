@@ -62,7 +62,7 @@ Practice1::Application.configure do
   config.active_support.deprecation = :notify
 
   #aws assets for production
-  config.action_controller.asset_host = "//#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
+  config.action_controller.asset_host = "d33v5efzg5hed9.cloudfront.net"
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
