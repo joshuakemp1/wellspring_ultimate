@@ -19,6 +19,9 @@ gem "flickraw", "~> 0.9.6"
 gem 'therubyracer', '0.10.2'
 gem 'heroku'
 
+#AWS
+gem 'asset_sync'
+
 
 
 
