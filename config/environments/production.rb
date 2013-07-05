@@ -61,6 +61,9 @@ Practice1::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  #aws assets for production
+  config.action_controller.asset_host = "http://wellspring.s3.amazonaws.com"
+
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
