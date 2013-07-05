@@ -62,6 +62,8 @@ module Practice1
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.digest = true
+    config.assets.precompile += %w( base.css color.css contactform.css fancybox.css flexslider.css grid960.css main.css responsive.css  )
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
