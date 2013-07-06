@@ -22,6 +22,9 @@ gem 'heroku'
 #AWS
 gem 'asset_sync'
 
+#Heroku Performance Monitor
+gem 'newrelic_rpm'
+
 
 
 
